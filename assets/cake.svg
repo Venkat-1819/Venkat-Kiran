@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Glowing aura behind cake -->
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Cake Stand / Plate -->
+  <ellipse cx="150" cy="260" rx="120" ry="20" fill="#ffffff" opacity="0.9" filter="url(#glow)" />
+  <ellipse cx="150" cy="255" rx="110" ry="16" fill="#f8bbd0" stroke="#e91e63" stroke-width="3" />
+
+  <!-- Bottom Tier -->
+  <rect x="60" y="180" width="180" height="70" rx="12" fill="#ff80ab" stroke="#c2185b" stroke-width="3" />
+  <!-- Frosting Dripping Effect Bottom Tier -->
+  <path d="M 60 180 Q 75 205 90 180 Q 105 210 120 180 Q 135 205 150 180 Q 165 210 180 180 Q 195 205 210 180 Q 225 210 240 180 L 240 180 L 60 180 Z" fill="#ffffff" />
+  <!-- Sprinkles Bottom -->
+  <circle cx="85" cy="215" r="4" fill="#ffd54f" />
+  <circle cx="115" cy="230" r="4" fill="#80deea" />
+  <circle cx="150" cy="220" r="4" fill="#ea80fc" />
+  <circle cx="185" cy="230" r="4" fill="#b9f6ca" />
+  <circle cx="215" cy="215" r="4" fill="#ffd54f" />
+
+  <!-- Middle Tier -->
+  <rect x="85" y="125" width="130" height="60" rx="10" fill="#ba68c8" stroke="#7b1fa2" stroke-width="3" />
+  <!-- Frosting Dripping Middle -->
+  <path d="M 85 125 Q 98 145 111 125 Q 124 150 137 125 Q 150 145 163 125 Q 176 150 189 125 Q 202 145 215 125 L 215 125 L 85 125 Z" fill="#ffffff" />
+  <!-- Decoration Stars / Hearts Middle -->
+  <circle cx="110" cy="155" r="3" fill="#ffffff" />
+  <circle cx="150" cy="160" r="3.5" fill="#ffffff" />
+  <circle cx="190" cy="155" r="3" fill="#ffffff" />
+
+  <!-- Top Tier -->
+  <rect x="110" y="80" width="80" height="50" rx="8" fill="#f48fb1" stroke="#c2185b" stroke-width="3" />
+  <!-- Frosting Top -->
+  <path d="M 110 80 Q 123 98 136 80 Q 150 100 164 80 Q 177 98 190 80 L 190 80 L 110 80 Z" fill="#ffffff" />
+
+  <!-- Strawberries / Cherries on Top -->
+  <circle cx="120" cy="74" r="8" fill="#ff1744" />
+  <circle cx="150" cy="72" r="9" fill="#ff1744" />
+  <circle cx="180" cy="74" r="8" fill="#ff1744" />
+
+  <!-- Candles -->
+  <!-- Candle 1 -->
+  <rect x="128" y="42" width="6" height="30" rx="2" fill="#4fc3f7" stroke="#0288d1" stroke-width="1" />
+  <!-- Candle 2 (Center - taller) -->
+  <rect x="147" y="36" width="6" height="36" rx="2" fill="#ffd54f" stroke="#ffa000" stroke-width="1" />
+  <!-- Candle 3 -->
+  <rect x="166" y="42" width="6" height="30" rx="2" fill="#b9f6ca" stroke="#388e3c" stroke-width="1" />
+
+  <!-- Candle Flames -->
+  <!-- Flame 1 -->
+  <path d="M 131 42 C 125 32 131 22 131 22 C 131 22 137 32 131 42 Z" fill="#ff9800" filter="url(#flameGlow)" />
+  <path d="M 131 40 C 128 34 131 27 131 27 C 131 27 134 34 131 40 Z" fill="#ffeb3b" />
+
+  <!-- Flame 2 -->
+  <path d="M 150 36 C 144 24 150 14 150 14 C 150 14 156 24 150 36 Z" fill="#ff9800" filter="url(#flameGlow)" />
+  <path d="M 150 34 C 146 26 150 18 150 18 C 150 18 154 26 150 34 Z" fill="#ffeb3b" />
+
+  <!-- Flame 3 -->
+  <path d="M 169 42 C 163 32 169 22 169 22 C 169 22 175 32 169 42 Z" fill="#ff9800" filter="url(#flameGlow)" />
+  <path d="M 169 40 C 166 34 169 27 169 27 C 169 27 172 34 169 40 Z" fill="#ffeb3b" />
+
+  <!-- Sparkles -->
+  <path d="M 95 60 L 98 63 L 95 66 L 92 63 Z" fill="#ffffff" />
+  <path d="M 205 60 L 208 63 L 205 66 L 202 63 Z" fill="#ffffff" />
+  <path d="M 150 8 L 153 12 L 150 16 L 147 12 Z" fill="#ffd700" />
+</svg>

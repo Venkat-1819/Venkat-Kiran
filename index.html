@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1b0638">
+    <title>Advance Happiest Birthday Paapa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Typed.js for typewriter effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+    <h2>A Little Surprise For...</h2>
+    <h1>❤️ potatoo ❤️</h1>
+    <div class="loadingHeart"></div>
+</div>
+
+<!-- Night Sky Background Elements -->
+<div id="stars-container" class="stars-bg"></div>
+
+<!-- Moon -->
+<div class="moon" title="Glow Moon">🌙</div>
+
+<!-- Slow Floating Clouds -->
+<div class="clouds-container">
+    <div class="cloud cloud-1">☁️</div>
+    <div class="cloud cloud-2">☁️</div>
+    <div class="cloud cloud-3">☁️</div>
+</div>
+
+<!-- Shooting Stars -->
+<div id="shooting-stars">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+</div>
+
+<!-- Fireflies -->
+<div id="fireflies-container"></div>
+
+<!-- Main Content Card -->
+<div class="container">
+    <div class="card">
+        <!-- Sparkles at the top -->
+        <div class="top-sparkles">
+            <span>✨</span><span>✨</span><span>✨</span>
+        </div>
+
+        <!-- Profile Photo -->
+        <div class="photo-wrapper">
+            <img src="photo.jpg" class="profile" alt="Paapa Photo">
+        </div>
+
+        <!-- Title -->
+        <h1>
+            Advance Happiest<br>
+            Birthday<br>
+            Naanaluuuuuu ❤️
+        </h1>
+
+        <!-- Divider 1 -->
+        <div class="divider"></div>
+
+        <!-- Countdown Section -->
+        <div class="countdown-section">
+            <div class="countdown-title">
+                <span>⏳</span> Countdown
+            </div>
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">18</span>
+                    <label>Days</label>
+                </div>
+                <div class="time-box">
+                    <span id="hours">02</span>
+                    <label>Hours</label>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">14</span>
+                    <label>Minutes</label>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">36</span>
+                    <label>Seconds</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider 2 -->
+        <div class="divider"></div>
+
+        <!-- Open Surprise Button -->
+        <div class="button-wrapper">
+            <button id="startBtn">
+                🎁 Open Surprise
+            </button>
+        </div>
+
+        <!-- Divider 3 -->
+        <div class="divider"></div>
+
+        <!-- Cute Animal Emojis Row -->
+        <div class="cute-animals">
+            <span class="animal" id="a1" title="Teddy">🧸</span>
+            <span class="animal" id="a2" title="Puppy">🐶</span>
+            <span class="animal" id="a3" title="Panda">🐼</span>
+            <span class="animal" id="a4" title="Kitty">🐱</span>
+            <span class="animal" id="a5" title="Bunny">🐰</span>
+        </div>
+    </div>
+</div>
+
+<!-- Surprise Modal / Popup -->
+<div id="surpriseModal" class="modal hidden">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+        <button class="close-btn" id="closeModalBtn">&times;</button>
+        <div class="modal-header">
+            <div class="modal-emoji">🎂✨💖</div>
+            <h2>Special Surprise for Paapa!</h2>
+        </div>
+        <div class="modal-body">
+            <p class="love-message">
+                Every single day brings us closer to celebrating the most wonderful, amazing person in the world! You bring so much joy, smiles, and magic into life. 🌸
+            </p>
+            <div class="gift-box-animation">🎁</div>
+            <p class="sub-message">
+                Wishing you endless happiness, laughter, love, and sweet dreams in advance! ❤️
+            </p>
+        </div>
+        <button id="celebrateBtn" class="celebrate-btn">🎉 Celebrate Again!</button>
+    </div>
+</div>
+
+<!-- Puppy -->
+<div id="puppyScene">
+    <img src="assets/puppy.svg" id="puppy" alt="Cute Puppy">
+    <div id="speech">
+        Hiiiii Paapa 👋
+    </div>
+</div>
+
+<!-- Teddy -->
+<div id="teddyScene">
+    <img src="assets/teddy.svg" id="teddy" alt="Teddy Bear">
+    <div id="teddySpeech">
+        We made something special for you... 💖
+    </div>
+</div>
+
+<!-- Panda -->
+<div id="pandaScene">
+    <div id="pandaSpeech">
+        I brought a special gift for you... 🎁
+    </div>
+    <img src="assets/panda.svg" id="panda" alt="Panda">
+</div>
+
+<!-- CAT -->
+<div id="catScene">
+    <img src="assets/cat.svg" id="cat" alt="Cat">
+</div>
+
+<!-- BUNNY -->
+<div id="bunnyScene">
+    <img src="assets/bunny.svg" id="bunny" alt="Bunny">
+    <div id="bunnySpeech">
+        Click the Surprise Button ❤️
+    </div>
+</div>
+
+<!-- Glass Birthday Card -->
+<section id="birthdayCard">
+    <div class="glassCard">
+        <img src="assets/photo.jpg" class="profile" alt="Paapa Photo" onerror="this.src='photo.jpg'">
+        <h1>
+            Advance Happiest Birthday
+            <br>
+            Paapa ❤️
+        </h1>
+        <p id="typedText"></p>
+        <div class="countdown">
+            <div>
+                <span id="days">00</span>
+                <small>DAYS</small>
+            </div>
+            <div>
+                <span id="hours">00</span>
+                <small>HOURS</small>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <small>MINUTES</small>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <small>SECONDS</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LETTER -->
+<div id="letterScene">
+    <div class="envelope">
+        <div class="letter">
+            <h2>💖 Dear Paapa 💖</h2>
+            <p id="letterText"></p>
+        </div>
+    </div>
+</div>
+
+<!-- FINAL MESSAGE -->
+<div id="finalScene">
+    <h1>
+        ✨ Advance Happiest Birthday ✨
+        <br>
+        Paapa ❤️
+    </h1>
+    <p>
+        May all your dreams come true 🌸
+    </p>
+</div>
+
+<!-- Celebration Effects -->
+<div id="hearts"></div>
+<div id="petals"></div>
+<div id="sparkles"></div>
+<div id="balloons"></div>
+
+<!-- Hidden Audio Element for Background Music -->
+<audio id="bgMusic" loop style="display: none;"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

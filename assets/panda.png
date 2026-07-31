@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Cute Panda Bear SVG -->
+  <!-- Ears -->
+  <circle cx="50" cy="55" r="26" fill="#1e1e24" />
+  <circle cx="150" cy="55" r="26" fill="#1e1e24" />
+  <!-- Body -->
+  <ellipse cx="100" cy="145" rx="52" ry="42" fill="#ffffff" />
+  <!-- Arms/Shoulders -->
+  <path d="M 50 120 C 50 150 150 150 150 120 C 130 110 70 110 50 120 Z" fill="#1e1e24" />
+  <!-- Paws -->
+  <circle cx="55" cy="170" r="16" fill="#1e1e24" />
+  <circle cx="145" cy="170" r="16" fill="#1e1e24" />
+  <!-- Head -->
+  <circle cx="100" cy="90" r="48" fill="#ffffff" />
+  <!-- Eye Patches -->
+  <ellipse cx="78" cy="88" rx="16" ry="14" fill="#1e1e24" transform="rotate(-15 78 88)" />
+  <ellipse cx="122" cy="88" rx="16" ry="14" fill="#1e1e24" transform="rotate(15 122 88)" />
+  <!-- Eyes -->
+  <circle cx="78" cy="88" r="6" fill="#ffffff" />
+  <circle cx="122" cy="88" r="6" fill="#ffffff" />
+  <circle cx="79" cy="89" r="3" fill="#1e1e24" />
+  <circle cx="123" cy="89" r="3" fill="#1e1e24" />
+  <!-- Snout/Nose -->
+  <ellipse cx="100" cy="102" rx="8" ry="5" fill="#1e1e24" />
+  <ellipse cx="98" cy="100" rx="2" ry="1" fill="#ffffff" />
+  <!-- Mouth -->
+  <path d="M 95 107 Q 100 112 105 107" stroke="#1e1e24" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <!-- Blush -->
+  <ellipse cx="64" cy="98" rx="8" ry="5" fill="#ff758c" opacity="0.45" />
+  <ellipse cx="136" cy="98" rx="8" ry="5" fill="#ff758c" opacity="0.45" />
+</svg>

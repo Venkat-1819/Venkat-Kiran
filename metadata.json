@@ -1,0 +1,6 @@
+{
+  "name": "Birthday Surprise Premium",
+  "description": "Birthday surprise countdown and celebration card",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

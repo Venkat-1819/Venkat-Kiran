@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Cute Teddy SVG -->
+  <circle cx="100" cy="100" r="90" fill="#ff7dbd" opacity="0.15" />
+  <circle cx="50" cy="55" r="28" fill="#a06535" />
+  <circle cx="50" cy="55" r="18" fill="#d49a6a" />
+  <circle cx="150" cy="55" r="28" fill="#a06535" />
+  <circle cx="150" cy="55" r="18" fill="#d49a6a" />
+  <ellipse cx="100" cy="145" rx="50" ry="42" fill="#a06535" stroke="#3a1e05" stroke-width="2" />
+  <ellipse cx="100" cy="145" rx="32" ry="26" fill="#d49a6a" />
+  <circle cx="55" cy="170" r="16" fill="#884f22" />
+  <circle cx="55" cy="170" r="9" fill="#d49a6a" />
+  <circle cx="145" cy="170" r="16" fill="#884f22" />
+  <circle cx="145" cy="170" r="9" fill="#d49a6a" />
+  <circle cx="100" cy="90" r="48" fill="#a06535" stroke="#3a1e05" stroke-width="2" />
+  <ellipse cx="100" cy="100" rx="22" ry="16" fill="#d49a6a" />
+  <ellipse cx="100" cy="94" rx="9" ry="6" fill="#3a1e05" />
+  <ellipse cx="98" cy="92" rx="2.5" ry="1.5" fill="#ffffff" />
+  <path d="M 95 100 Q 100 106 105 100" stroke="#3a1e05" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <circle cx="78" cy="82" r="8" fill="#201002" />
+  <circle cx="122" cy="82" r="8" fill="#201002" />
+  <circle cx="76" cy="79" r="3" fill="#ffffff" />
+  <circle cx="120" cy="79" r="3" fill="#ffffff" />
+  <ellipse cx="68" cy="94" rx="7" ry="4" fill="#ff758c" opacity="0.5" />
+  <ellipse cx="132" cy="94" rx="7" ry="4" fill="#ff758c" opacity="0.5" />
+</svg>
