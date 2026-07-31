@@ -1,13 +1,12 @@
 {
-  "name": "birthday-surprise-premium",
+  "name": "advance-birthday-celebration",
   "version": "1.0.0",
-  "description": "Advance Happiest Birthday Paapa - Birthday Surprise App",
+  "description": "Advance Birthday Celebration App",
   "main": "server.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "dev": "node server.js",
-    "build": "echo 'No build step required for static site'",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Build complete'"
   },
   "dependencies": {
     "express": "^4.19.2"
